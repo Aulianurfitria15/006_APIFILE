@@ -42,9 +42,7 @@ async function getKomikById(database, id) {
   return komik;
 }
 
-// Kelanjutan dari komikService.js
 
-// Fungsi untuk memperbarui data komik
 async function updateKomik(database, id, komikData) {
   const komik = await database.Komik.findByPk(id);
   
